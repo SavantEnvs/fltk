@@ -1,0 +1,5 @@
+# Prune the build context: local build trees and fuzz binaries are rebuilt by mayhem/build.sh.
+# .git is deliberately NOT excluded: the image holds the full repo history (upstream + the mayhem commit).
+mayhem/build-fuzz
+mayhem/build-oracle
+/fuzz_*

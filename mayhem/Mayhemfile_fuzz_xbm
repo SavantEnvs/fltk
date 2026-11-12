@@ -1,0 +1,9 @@
+project: savantenvs/fltk
+target: fuzz_xbm
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_xbm/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_xbm
+    libfuzzer: true
+    timeout: 5
