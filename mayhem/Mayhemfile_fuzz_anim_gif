@@ -1,0 +1,9 @@
+project: savantenvs/fltk
+target: fuzz_anim_gif
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_anim_gif/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_anim_gif
+    libfuzzer: true
+    timeout: 5
